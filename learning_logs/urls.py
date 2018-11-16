@@ -6,5 +6,5 @@ from . import views
 app_name = 'learning_logs'
 urlpattterns = [
     # home page
-    path('', views.index, name='index')
+    path('', views.index, name='index'),
 ]
