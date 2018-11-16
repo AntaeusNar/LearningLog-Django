@@ -3,8 +3,11 @@
 from django.urls import path
 
 from . import views
+
 app_name = 'learning_logs'
-urlpattterns = [
+
+urlpatterns = [
     # home page
     path('', views.index, name='index'),
+    path('index/', views.index, name='index'),
 ]
