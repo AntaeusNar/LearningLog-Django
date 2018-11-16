@@ -17,7 +17,7 @@ class Entry(models.Model):
     """Something specific learned about a topic"""
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE)
     text = models.TextField()
-    data_added = models.DataTeimField(Auto_now_add=True)
+    data_added = models.DataTimeField(Auto_now_add=True)
 
     class Meta:
         verbose_name_plural = 'entries'
