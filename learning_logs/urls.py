@@ -10,4 +10,7 @@ urlpatterns = [
     # home page
     path('', views.index, name='index'),
     path('index/', views.index, name='index'),
+
+    # SHow all topics.
+    path('topics/', view.topics, name='topics'),
 ]
