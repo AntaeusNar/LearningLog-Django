@@ -12,5 +12,5 @@ urlpatterns = [
     path('index/', views.index, name='index'),
 
     # SHow all topics.
-    path('topics/', view.topics, name='topics'),
+    path('topics/', views.topics, name='topics'),
 ]
