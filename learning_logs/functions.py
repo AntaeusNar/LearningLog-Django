@@ -1,5 +1,6 @@
 """A good place to hold some funtions, like a libary?"""
 
+from django.http import Http404
 # functions
 
 
