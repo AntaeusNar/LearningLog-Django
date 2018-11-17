@@ -6,7 +6,6 @@
     <h3>Add a new Entry:</h3>
 {% endblock header %}
 
-
 {% block content %}
 <form action = "{% url 'learning_logs:new_entry' topic.id %}" method="POST" class="form">
     {% csrf_token %}
