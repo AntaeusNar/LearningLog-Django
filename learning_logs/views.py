@@ -63,7 +63,7 @@ def new_entry(request, topic_id):
 
 
 def edit_entry(request, entry_id):
-    """edit an exsiting entry"""
+    """edit an existing entry"""
     entry = Entry.objects.get(id=entry_id)
     topic = entry.topic
 
