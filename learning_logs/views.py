@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
-form django.urls import reverse
+from django.urls import reverse
 
 from .models import Topic
 from .forms import TopicForm
@@ -26,6 +26,7 @@ def topic(request, topic_id):
     entries = topic.entry_set.order_by('-date_added')
     context = {'topic': topic, 'entries': entries}
     return render(request, 'learning_logs/topic.html', context)
+
 
 def new_topic(request):
     """Add a new topic"""
