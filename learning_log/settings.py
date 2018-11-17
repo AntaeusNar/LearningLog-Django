@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Third party Apps
+    'bootstrap3',
+
     # My created apps
     'learning_logs',
     'users',
